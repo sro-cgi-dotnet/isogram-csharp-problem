@@ -14,38 +14,18 @@ The word isograms, however, is not an isogram, because the s repeats.
 
 ## Test Scenarios
 
-```csharp
- [Fact]
-    - Should hold true for empty string
-    - Should hold true for word `isogram` with lower case characters
-    - Should hold false for word `eleven`
-    - Should hold true for long reported english word like `subdermatoglyphic`
-    - Should hold true for word with duplicated character in mixed case `Alphabet`
-    - Should hold true for word with hyphen `thumbscrew-japingly`
-    - 
-    
-
-    [Fact(Skip = "Remove to run test")]
-    public void Isogram_with_duplicated_hyphen()
-    {
-        Assert.True(Isogram.IsIsogram("six-year-old"));
-    }
-
-    [Fact(Skip = "Remove to run test")]
-    public void Made_up_name_that_is_an_isogram()
-    {
-        Assert.True(Isogram.IsIsogram("Emily Jung Schwartzkopf"));
-    }
-
-    [Fact(Skip = "Remove to run test")]
-    public void Duplicated_character_in_the_middle()
-    {
-        Assert.False(Isogram.IsIsogram("accentor"));
-    }
-```
+  - Should hold true for empty string ``
+  - Should hold true for word `isogram` with lower case characters
+  - Should hold false for word `eleven`
+  - Should hold true for long reported english word like `subdermatoglyphic`
+  - Should hold true for word with duplicated character in mixed case `Alphabet`
+  - Should hold true for word with hyphen `thumbscrew-japingly`
+  - Should hold true for word with duplicated hyphen `six-year-old`
+  - Should hold true for name which is seperated by spaces
 
 ## Note:
 - The name of the solution should exactly be `isogram-csharp-problem.sln`
+- The name of the test folder should be `Isogram.Tests`
 - Don't change the content of files `.gitignore` and `.travis.yml`
 
 ## Issues:
